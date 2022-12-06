@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-12-06T07:16:40.103Z"
+    "x-generation-date": "2022-12-06T14:31:46.887Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -680,9 +680,6 @@
                               }
                             }
                           },
-                          "isUserSignedIn": {
-                            "type": "boolean"
-                          },
                           "createdAt": {
                             "type": "string",
                             "format": "date-time"
@@ -1342,9 +1339,6 @@
                                 }
                               }
                             }
-                          },
-                          "isUserSignedIn": {
-                            "type": "boolean"
                           },
                           "createdAt": {
                             "type": "string",
@@ -2039,9 +2033,6 @@
                               }
                             }
                           },
-                          "isUserSignedIn": {
-                            "type": "boolean"
-                          },
                           "createdAt": {
                             "type": "string",
                             "format": "date-time"
@@ -2701,9 +2692,6 @@
                                 }
                               }
                             }
-                          },
-                          "isUserSignedIn": {
-                            "type": "boolean"
                           },
                           "createdAt": {
                             "type": "string",
@@ -8470,9 +8458,6 @@
                                             }
                                           }
                                         },
-                                        "isUserSignedIn": {
-                                          "type": "boolean"
-                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -9125,9 +9110,6 @@
                                               }
                                             }
                                           }
-                                        },
-                                        "isUserSignedIn": {
-                                          "type": "boolean"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -9815,9 +9797,6 @@
                                             }
                                           }
                                         },
-                                        "isUserSignedIn": {
-                                          "type": "boolean"
-                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -10470,9 +10449,6 @@
                                               }
                                             }
                                           }
-                                        },
-                                        "isUserSignedIn": {
-                                          "type": "boolean"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -11149,9 +11125,6 @@
                                                             }
                                                           }
                                                         }
-                                                      },
-                                                      "isUserSignedIn": {
-                                                        "type": "boolean"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -11834,9 +11807,6 @@
                                                             }
                                                           }
                                                         }
-                                                      },
-                                                      "isUserSignedIn": {
-                                                        "type": "boolean"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -12553,9 +12523,6 @@
                                                           }
                                                         }
                                                       },
-                                                      "isUserSignedIn": {
-                                                        "type": "boolean"
-                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -13238,9 +13205,6 @@
                                                           }
                                                         }
                                                       },
-                                                      "isUserSignedIn": {
-                                                        "type": "boolean"
-                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -13527,9 +13491,6 @@
                   ],
                   "example": "string or id"
                 }
-              },
-              "isUserSignedIn": {
-                "type": "boolean"
               }
             }
           }
@@ -14064,9 +14025,6 @@
                                             }
                                           }
                                         },
-                                        "isUserSignedIn": {
-                                          "type": "boolean"
-                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -14183,9 +14141,6 @@
                     }
                   }
                 }
-              },
-              "isUserSignedIn": {
-                "type": "boolean"
               },
               "createdAt": {
                 "type": "string",
@@ -14762,9 +14717,6 @@
                                             }
                                           }
                                         },
-                                        "isUserSignedIn": {
-                                          "type": "boolean"
-                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -14881,9 +14833,6 @@
                     }
                   }
                 }
-              },
-              "isUserSignedIn": {
-                "type": "boolean"
               },
               "createdAt": {
                 "type": "string",
@@ -15493,9 +15442,6 @@
                                             }
                                           }
                                         },
-                                        "isUserSignedIn": {
-                                          "type": "boolean"
-                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -15612,9 +15558,6 @@
                     }
                   }
                 }
-              },
-              "isUserSignedIn": {
-                "type": "boolean"
               },
               "createdAt": {
                 "type": "string",
@@ -16191,9 +16134,6 @@
                                             }
                                           }
                                         },
-                                        "isUserSignedIn": {
-                                          "type": "boolean"
-                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -16310,9 +16250,6 @@
                     }
                   }
                 }
-              },
-              "isUserSignedIn": {
-                "type": "boolean"
               },
               "createdAt": {
                 "type": "string",

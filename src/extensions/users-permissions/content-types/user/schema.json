@@ -68,10 +68,6 @@
       "relation": "oneToMany",
       "target": "api::task.task",
       "mappedBy": "users_permissions_user"
-    },
-    "isUserSignedIn": {
-      "type": "boolean",
-      "default": false
     }
   }
 }
