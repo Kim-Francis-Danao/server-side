@@ -8,36 +8,58 @@ const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::task.task', ({strapi}) => ({
     async deleteCompletedTask(ctx) {
-        try {
-            const entries = await strapi.db.query('api::task.task').deleteMany({
+        await strapi.db.query('api::task.task')
+            .deleteMany({
                 where: {
                     isDone: {
                         $eq: true
                     }
                 }
             })
-            return entries;
-        } catch(error) {
-            ctx.badrequest = error; 
-        }
+            .then( response => {
+                ctx.body = response;
+            })
+            .catch(error => {
+                ctx.badrequest = error;
+            })
     },
 
     async deleteIncompleteTask(ctx) {
-        try {
-            const entries = await strapi.db.query('api::task.task').deleteMany({
+        await strapi.db.query('api::task.task')
+            .deleteMany({
                 where: {
                     isDone: {
                         $eq: false
-                    },
-                    isDone: {
-                        $eq: true
                     }
                 }
             })
-            return entries;
-        } catch(error) {
-            ctx.body = error; 
-        }
+            .then( response => {
+                ctx.body = response;
+            })
+            .catch(error => {
+                ctx.badrequest = error;
+            })
+    },
+
+    async getTaskAndUserData(ctx) {
+        await strapi.db.query('api::task.task')
+            .findMany({
+                populate: {
+                    users_permissions_user: {
+                        where: {
+                            username: {
+                                $eq: 'kim'
+                            }
+                        }
+                    }
+                }
+            })
+            .then(response => {
+                ctx.body = response;
+            })
+            .catch(error => {
+                ctx.badrequest = error.name;
+            });          
     }
 }));
 
