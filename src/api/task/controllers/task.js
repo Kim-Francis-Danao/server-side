@@ -20,7 +20,7 @@ module.exports = createCoreController('api::task.task', ({strapi}) => ({
                 ctx.body = response;
             })
             .catch(error => {
-                ctx.badrequest = error;
+                return ctx.badrequest(error);
             })
     },
 
@@ -37,7 +37,7 @@ module.exports = createCoreController('api::task.task', ({strapi}) => ({
                 ctx.body = response;
             })
             .catch(error => {
-                ctx.badrequest = error;
+                return ctx.badrequest(error);
             })
     },
 
@@ -58,7 +58,7 @@ module.exports = createCoreController('api::task.task', ({strapi}) => ({
                 ctx.body = response;
             })
             .catch(error => {
-                ctx.badrequest = error.name;
+                return ctx.badrequest(error);
             });          
     }
 }));
