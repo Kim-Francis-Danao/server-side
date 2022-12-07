@@ -18,7 +18,7 @@ module.exports = createCoreController('api::task.task', ({strapi}) => ({
             })
             return entries;
         } catch(error) {
-            ctx.body = error; 
+            ctx.badrequest = error; 
         }
     },
 
@@ -28,6 +28,9 @@ module.exports = createCoreController('api::task.task', ({strapi}) => ({
                 where: {
                     isDone: {
                         $eq: false
+                    },
+                    isDone: {
+                        $eq: true
                     }
                 }
             })
